@@ -18,7 +18,7 @@ const createNewTasks = async (body, id) => {
     return {
         code: 201,
         status: 'success',
-        message: 'Post created successfully!',
+        message: 'Task created successfully!',
         data: {
         post,
       },
@@ -30,7 +30,7 @@ const createNewTasks = async (body, id) => {
     return {
         code: 200,
         status: 'success',
-        message: 'Single book fetched successfully',
+        message: 'Single task fetched successfully',
         data: result[0]
     }
 };
@@ -42,7 +42,7 @@ const getAllTasks = async () => {
     const result = await runQuery(fetchAllTasksListed);
     return {
       status: 'success',
-      message: 'Posts fetched successfully!',
+      message: 'Tasks fetched successfully!',
       code: 200,
       data: {
         result,
